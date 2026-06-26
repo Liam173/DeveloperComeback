@@ -43,12 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee.cs" />
+    <Compile Include="Exercises\Day01.cs" />
+    <Compile Include="Exercises\Day02.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Notes\CSharp.md" />
+    <None Include="Notes\Git.md" />
+    <None Include="Notes\Interview Questions.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
