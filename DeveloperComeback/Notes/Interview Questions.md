@@ -43,3 +43,15 @@ Difference between IEnumerable and IQueryable?
 Answer
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 5
+
+Why would you remove set from a property?
+
+-------------------------------------
+
+Answer
+
+To make the object immutable after creation or to ensure it can only be modified through controlled methods, which helps maintain a valid state.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

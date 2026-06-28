@@ -6,7 +6,7 @@ namespace DeveloperComeback
     {
         public static void Run()
         {
-            Car car1 = CreateCar(
+            Car car1 = new Car(
                 "Toyota",
                 "Corolla",
                 2020,
@@ -18,27 +18,35 @@ namespace DeveloperComeback
 
         #region "Models and Objects - Day 2"
 
-        private static Car CreateCar(
-            string brand,
-            string model,
-            int year,
-            string colour,
-            decimal price)
-        {
-            return new Car
-            {
-                Brand = brand,
-                Model = model,
-                Year = year,
-                Colour = colour,
-                Price = price
-            };
-        }
+        // Constructor handles this now.
+        //private static Car CreateCar(
+        //    string brand,
+        //    string model,
+        //    int year,
+        //    string colour,
+        //    decimal price)
+        //{
+        //    return new Car
+        //    {
+        //        brand,
+        //        model,
+        //        year,
+        //        colour,
+        //        price
+        //    };
+        //}
 
         private static void PrintCar(Car car)
         {
-            Console.WriteLine(
-                $"{car.Brand} {car.Model}");
+            Console.WriteLine("==============================");
+            Console.WriteLine("Car Information");
+            Console.WriteLine("==============================");
+            Console.WriteLine($"Brand  : {car.Brand}");
+            Console.WriteLine($"Model  : {car.Model}");
+            Console.WriteLine($"Year   : {car.Year}");
+            Console.WriteLine($"Colour : {car.Colour}");
+            Console.WriteLine($"Price  : {car.Price:C}");
+            Console.WriteLine("==============================");
         }
 
         #endregion
