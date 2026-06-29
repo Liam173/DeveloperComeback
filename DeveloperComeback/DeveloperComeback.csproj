@@ -46,6 +46,7 @@
     <Compile Include="Exercises\Day01.cs" />
     <Compile Include="Exercises\Day02.cs" />
     <Compile Include="Exercises\Day03.cs" />
+    <Compile Include="Exercises\Day04.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Program.cs" />
