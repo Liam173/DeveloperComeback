@@ -62,3 +62,46 @@ Any method is used to determine if any elements in the list satisfy a specific c
 Where method is used to filter the elements of a list based on a specific condition.
 
 Average method is used to calculate the average of the elements in a list.
+
+
+# Methods
+
+Instance Method:
+
+Belong to an object.
+
+Require an instance to be called.
+
+Example:
+
+employee.GiveRaise(5000m);
+
+-------------------------------------
+
+Static Method:
+
+Belong to the class itself.
+
+Do not require an object.
+
+Example:
+
+Math.Max(10,20);
+
+-------------------------------------
+
+Private Setter:
+
+Allows a property to be modified only from inside its own class.
+
+Example:
+
+public decimal Salary { get; private set; }
+
+-------------------------------------
+
+ToString():
+
+Returns a string representation of an object.
+
+Override it to make objects easier to print and debug.

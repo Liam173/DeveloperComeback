@@ -12,7 +12,7 @@ namespace DeveloperComeback
 
         public int Age { get; }
 
-        public decimal Salary { get; }
+        public decimal Salary { get; private set; }
 
         public Employee(
             string name,
@@ -37,6 +37,36 @@ namespace DeveloperComeback
             Name = name;
             Age = age;
             Salary = salary;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} ({Age}) - {Salary:C}";
+        }
+
+        /// <summary>
+        /// Increases the employee's salary by the specified amount.
+        /// </summary>
+        /// <param name="amount">The raise amount.</param>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// Thrown when the amount is less than or equal to zero.
+        /// </exception>
+        public void GiveRaise(decimal amount)
+        {
+            if (amount <= 0)
+            {
+                throw new ArgumentOutOfRangeException("Raise amount must be a positive value", nameof(amount));
+            }
+
+            Salary += amount;
+        }
+
+        /// <summary>
+        /// Checks if the employee is a high earner.
+        /// </summary>
+        public bool IsHighEarner()
+        {
+            return Salary >= 50000m;
         }
     }
 }
