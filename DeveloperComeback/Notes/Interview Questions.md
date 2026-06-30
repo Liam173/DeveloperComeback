@@ -119,3 +119,66 @@ Answer
 Where() returns a filtered collection of elements that satisfy the specified condition.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 11
+
+What is the difference between a static method and an instance method?
+
+-------------------------------------
+
+Answer
+
+Static methods belong to the class itself and can be called without creating an instance of the class. Instance methods belong to an instance of the class and can only be called on an object of that class.
+
+Eg. Static method: Math.Sqrt(16) - called on the Math class itself.
+Eg. Instance method: myString.ToUpper() - called on an instance of the String class.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 12
+
+Why would you use a private setter?
+
+-------------------------------------
+
+Answer
+
+To control how the property's value can be modified, ensuring that it can only be changed in a controlled manner, such as through a public method. (Encapsulation)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 13
+
+What is encapsulation?
+
+-------------------------------------
+
+Answer
+
+Encapsulation is the principle of hiding an object's internal state and requiring all interactions to occur through well-defined methods or properties. This helps maintain valid data, protects against misuse, and improves maintainability.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 14
+
+Why override ToString()?
+
+-------------------------------------
+
+Answer
+
+ToString() is overridden to provide a string representation of an object, making it easier to display or log the object's state.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 15
+
+When should business logic live inside a class?
+
+-------------------------------------
+
+Answer
+
+Business logic should live inside a class when it is directly related to the data and behavior of that class. This promotes encapsulation and makes the code more maintainable and easier to understand.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

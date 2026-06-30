@@ -12,7 +12,7 @@ namespace DeveloperComeback
 
         public string Colour { get; }
 
-        public decimal Price { get; }
+        public decimal Price { get; private set; }
 
         public Car(
             string brand,
@@ -27,7 +27,7 @@ namespace DeveloperComeback
             if (string.IsNullOrWhiteSpace(model))
                 throw new ArgumentException("Model cannot be empty.");
 
-            if (price < 0)
+            if (price <= 0)
                 throw new ArgumentOutOfRangeException(nameof(price));
 
             if (year < 1886)
@@ -38,6 +38,31 @@ namespace DeveloperComeback
             Year = year;
             Colour = colour;
             Price = price;
+        }
+
+        public override string ToString()
+        {
+            return $"{Brand} {Model} ({Year}) - {Price:C}";
+        }
+
+        /// <summary>
+        /// Checks if the car is a classic (manufactured before 1995).
+        /// </summary>
+        public bool IsClassic()
+        {
+            return Year < 1995;
+        }
+
+        /// <summary>
+        /// Increases the car's price by the specified amount.
+        /// </summary>
+        /// <param name="amount">The price increase.</param>
+        public void IncreasePrice(decimal amount)
+        {
+            if (amount <= 0)
+                throw new ArgumentOutOfRangeException(nameof(amount));
+
+            Price += amount;
         }
     }
 }
