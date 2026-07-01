@@ -48,8 +48,12 @@
     <Compile Include="Exercises\Day03.cs" />
     <Compile Include="Exercises\Day04.cs" />
     <Compile Include="Exercises\Day05.cs" />
+    <Compile Include="Exercises\Day06.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Contractor.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Manager.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
