@@ -182,3 +182,143 @@ Answer
 Business logic should live inside a class when it is directly related to the data and behavior of that class. This promotes encapsulation and makes the code more maintainable and easier to understand.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 16
+
+What is obfuscation?
+
+-------------------------------------
+
+Answer
+
+Obfuscation is the process of making code difficult to read or understand, often used to protect intellectual property or prevent reverse engineering. It can involve renaming variables and methods to meaningless names, removing comments, and altering the structure of the code.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 17
+
+What is the purpose of obfuscation?
+
+-------------------------------------
+
+Answer
+
+Obfuscation is used to protect intellectual property, prevent reverse engineering, and make it harder for attackers to understand the code's logic and functionality.
+
+Real world example: If you have a proprietary algorithm in your code, obfuscation can help prevent competitors from easily copying it.
+
+Sensitive data in a database can be obfuscated to protect it from unauthorized access. This can involve techniques like encryption, tokenization, or masking to ensure that the data is not easily readable or usable by unauthorized parties.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 18
+
+What is inheritance?
+
+-------------------------------------
+
+Answer
+
+Inheritance is an object-oriented programming feature that allows one class to inherit properties and methods from another class. 
+
+It represents an "is-a" relationship and promotes code reuse. 
+
+For example, a Manager is an Employee, so Manager can inherit common employee functionality while adding its own behavior.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 19
+
+What is polymorphism?
+
+-------------------------------------
+
+Answer
+
+Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as objects of a common superclass. 
+
+It enables a single interface to represent different underlying forms (data types). Polymorphism can be achieved through method overriding (runtime polymorphism) and method overloading (compile-time polymorphism).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 20
+
+What is an abstract class?
+
+-------------------------------------
+
+Answer
+
+An abstract class is a class that cannot be instantiated on its own and is intended to be a base class for other classes. 
+
+It can contain both abstract methods (which must be implemented by derived classes) and concrete methods (which have an implementation). 
+
+Abstract classes are used to define a common interface and share code among related classes.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 21
+
+What is the difference between virtual and override?
+
+-------------------------------------
+
+Answer
+
+The `virtual` keyword is used in a base class to indicate that a method can be overridden in derived classes. 
+
+Whereas the `override` keyword is used in a derived class to provide a new implementation of a method that is declared as virtual in the base class.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 22
+
+What does the base keyword do?
+
+-------------------------------------
+
+Answer
+
+The `base` keyword is used in a derived class to access members (methods, properties, constructors) of its base class. 
+
+It allows you to call the base class's implementation of a method or constructor, which can be useful for extending or modifying behavior while still leveraging the base class's functionality.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 23
+
+What is the difference between protected and private?
+
+-------------------------------------
+
+Answer
+
+The `protected` access modifier allows members of a class to be accessible within the class itself and by derived classes. 
+
+Whereas the `private` access modifier restricts access to members of a class to only within that class itself, making them inaccessible to derived classes or any other external code.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 24
+
+What is composition?
+
+-------------------------------------
+
+Answer
+
+Composition is a design principle in object-oriented programming where a class is composed of one or more objects from other classes, rather than inheriting from them.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 25
+
+When would you avoid inheritance?
+
+-------------------------------------
+
+Answer
+
+Would avoid inheritance when the relationship between classes does not represent an "is-a" relationship, or when it leads to tight coupling and reduced flexibility.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

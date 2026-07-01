@@ -105,3 +105,62 @@ ToString():
 Returns a string representation of an object.
 
 Override it to make objects easier to print and debug.
+
+
+# Object-Oriented Programming
+
+## Inherirance
+
+Allows a class to inherit members from another class using the ':' syntax.
+
+Example:
+
+Employee : Person
+
+-------------------------------------
+
+## Abstract Class
+
+A class that cannot be instantiated directly.
+
+It is designed to be inherited.
+
+-------------------------------------
+
+## Virtual Method
+
+A method that can be overridden by derived classes.
+
+-------------------------------------
+
+## Override
+
+Provides a new implementation of a virtual method inherited from a base class.
+
+-------------------------------------
+
+## Base
+
+Calls the constructor or members of the parent class.
+
+Example:
+
+: base(name, age)
+
+-------------------------------------
+
+## Polymorphism
+
+Allows objects derived from the same base class to be treated as the same type while behaving differently.
+
+-------------------------------------
+
+## Composition
+
+Represents a 'has-a' relationship.
+
+Example:
+
+Car has an Engine.
+
+Preferred over inheritance when the relationship is not naturally an 'is-a' relationship.

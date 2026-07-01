@@ -1,16 +1,13 @@
-﻿using System;
+﻿using DeveloperComeback.Models;
+using System;
 
 namespace DeveloperComeback
 {
-    public class Employee
+    public class Employee : Person
     {
         // A house blueprint is not a house.
         // A class is not an object.
         // It simply describes what an object will look like.
-
-        public string Name { get; }
-
-        public int Age { get; }
 
         public decimal Salary { get; private set; }
 
@@ -18,30 +15,20 @@ namespace DeveloperComeback
             string name,
             int age,
             decimal salary)
-        {
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                throw new ArgumentException("Name cannot be null or empty", nameof(name));
-            }
-
-            if (age < 18)
-            {
-                throw new ArgumentOutOfRangeException("Age must be at least 18", nameof(age));
-            }
-
+            : base(name, age) // This tells you that it inherits from the Person class, and it will call the constructor of the Person class with the name and age parameters.
+        {                     // "Before building the Employee, first build the Person part."
             if (salary <= 0)
             {
                 throw new ArgumentOutOfRangeException("Salary must be a positive value", nameof(salary));
             }
 
-            Name = name;
-            Age = age;
             Salary = salary;
         }
 
-        public override string ToString()
+        // Why not override ToString() instead of GetDescription()? Because ToString() is a method that is already defined in the base Object class, and it is not meant to be overridden for custom behavior. GetDescription() is a method that we define ourselves, and it is meant to be overridden for custom behavior.
+        public override string GetDescription()
         {
-            return $"{Name} ({Age}) - {Salary:C}";
+            return $"{Name} - Emplyee - {Salary:C}";
         }
 
         /// <summary>
