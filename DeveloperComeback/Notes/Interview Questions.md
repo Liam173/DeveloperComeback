@@ -322,3 +322,176 @@ Answer
 Would avoid inheritance when the relationship between classes does not represent an "is-a" relationship, or when it leads to tight coupling and reduced flexibility.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 26
+
+What is an interface?
+
+-------------------------------------
+
+Answer
+
+An interface defines a contract that implementing classes must follow. It specifies what members a class must provide without defining how they are implemented.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 27
+
+Why use interfaces?
+
+-------------------------------------
+
+Answer
+
+Interfaces promote loose coupling, flexibility, testability, and allow multiple implementations of the same behavior.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 28
+
+Can a class inherit multiple classes?
+
+-------------------------------------
+
+Answer
+
+No.
+
+C# only supports single inheritance.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 29
+
+Can a class implement multiple interfaces?
+
+-------------------------------------
+
+Answer
+
+Yes.
+
+A class can implement as many interfaces as required.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 30
+
+Difference between interface and abstract class?
+
+-------------------------------------
+
+Answer
+
+Abstract classes define what something is.
+
+Interfaces define what something can do.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 31
+
+Why are interfaces important for Dependency Injection?
+
+-------------------------------------
+
+Answer
+
+Because code depends on abstractions instead of concrete implementations, making it easy to replace or mock implementations.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 32 *
+
+Suppose your application currently sends notifications by email. A client asks you to add SMS and push notifications.
+
+Option A:
+
+if (type == "Email")
+{
+    ...
+}
+else if (type == "Sms")
+{
+    ...
+}
+else if (type == "Push")
+{
+    ...
+}
+
+Option B:
+
+INotification notification = ...;
+
+notification.Send(message);
+
+-------------------------------------
+
+Answer
+
+Option B, because it follows the Open/Closed Principle because new notification types can be added without modifying existing code. 
+
+It also promotes loose coupling since the service depends on the INotification interface rather than a specific implementation. 
+
+This makes the application easier to maintain, easier to extend, and much easier to unit test because implementations can be replaced with mock or fake objects.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 33
+
+Why not just instantiate EmailNotification directly inside NotificationService?
+
+-------------------------------------
+
+Answer
+
+Doing so would tightly couple NotificationService to a specific implementation. 
+
+By depending on the INotification interface instead, the service can work with any notification type without modification. 
+
+This makes the code more extensible, easier to maintain, and easier to test because implementations can be swapped or mocked.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 34 *
+
+A client wants to add WhatsApp notifications. What changes are required?
+
+-------------------------------------
+
+Answer
+
+Create a new WhatsAppNotification class implementing INotification. No changes are required to NotificationService, demonstrating the Open/Closed Principle.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 35 *
+
+Why is programming to an interface better than programming to a concrete class?
+
+-------------------------------------
+
+Answer
+
+It reduces coupling, allows implementations to be swapped, improves testability, and supports Dependency Injection.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 36 *
+
+Why is this better?
+
+ILogger logger
+
+than
+
+ConsoleLogger logger
+
+-------------------------------------
+
+Answer
+
+Because the consuming class doesn't care how logging is performed; it only depends on the behavior defined by the interface.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
