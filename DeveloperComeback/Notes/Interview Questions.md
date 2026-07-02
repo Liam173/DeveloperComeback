@@ -495,3 +495,75 @@ Answer
 Because the consuming class doesn't care how logging is performed; it only depends on the behavior defined by the interface.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 37
+
+What does SOLID stand for?
+
+-------------------------------------
+
+Answer
+
+S – Single Responsibility Principle
+O – Open/Closed Principle
+L – Liskov Substitution Principle
+I – Interface Segregation Principle
+D – Dependency Inversion Principle
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 38
+
+What is the Single Responsibility Principle?
+
+-------------------------------------
+
+Answer
+
+A class should have only one reason to change, meaning it should be responsible for a single piece of functionality.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 39
+
+What is the Open/Closed Principle?
+
+-------------------------------------
+
+Answer
+
+Software entities should be open for extension but closed for modification. (Interfaces)
+
+New functionality should be added by extending the code, rather than changing existing, working code.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 40
+
+Why are interfaces important for SOLID?
+
+-------------------------------------
+
+Answer
+
+Interfaces reduce coupling by allowing code to depend on abstractions instead of concrete implementations. 
+
+This makes systems easier to extend, test, and maintain.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 41
+
+When should you create an interface?
+
+-------------------------------------
+
+Answer
+
+Create an interface when multiple classes share the same behavior but may have different implementations. 
+
+Interfaces define a contract, reduce coupling, improve testability, and support dependency injection. 
+
+Avoid creating interfaces simply because classes operate on the same data; the shared behavior should be meaningful.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

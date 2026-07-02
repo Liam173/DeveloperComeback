@@ -208,3 +208,21 @@ IPrintable
 ILogger
 
 IEmailSender
+
+
+# SOLID Principles
+
+Single Responsibility Principle (SRP)
+A class should have one responsibility and one reason to change.
+
+Open/Closed Principle (OCP)
+Software should be open for extension but closed for modification.
+
+Liskov Substitution Principle (LSP)
+Derived classes should be replaceable wherever their base class is expected.
+
+Interface Segregation Principle (ISP)
+Prefer several small, focused interfaces over one large interface.
+
+Dependency Inversion Principle (DIP)
+Depend on abstractions (interfaces), not concrete implementations.
