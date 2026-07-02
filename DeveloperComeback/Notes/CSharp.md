@@ -164,3 +164,47 @@ Example:
 Car has an Engine.
 
 Preferred over inheritance when the relationship is not naturally an 'is-a' relationship.
+
+
+
+# Interfaces
+
+An interface defines a contract.
+
+Classes implementing an interface must provide implementations for all its members.
+
+Example:
+
+public interface ILogger
+{
+    void Log(string message);
+}
+
+-------------------------------------
+
+A class can inherit only one class.
+
+A class can implement many interfaces.
+
+-------------------------------------
+
+Interfaces promote:
+
+- Loose coupling
+- Testability
+- Flexibility
+- Dependency Injection
+
+-------------------------------------
+
+Think of interfaces as abilities.
+
+Example:
+
+IPayable
+
+IPrintable
+
+ILogger
+
+IEmailSender

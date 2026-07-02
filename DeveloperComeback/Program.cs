@@ -7,7 +7,7 @@ namespace DeveloperComeback
     {
         static void Main(string[] args)
         {
-            Day06Exercises.Run();
+            Day07Exercises.Run();
         }
     }
 }

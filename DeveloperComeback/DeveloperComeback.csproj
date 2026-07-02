@@ -43,12 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\ILogger.cs" />
+    <Compile Include="Logging Methods\ConsoleLogger.cs" />
+    <Compile Include="Logging Methods\FileLogger.cs" />
+    <Compile Include="Logging Methods\ReportService.cs" />
+    <Compile Include="Notification Methods\EmailNotification.cs" />
+    <Compile Include="Notification Methods\NotificationService.cs" />
+    <Compile Include="Notification Methods\SmsNotification.cs" />
+    <Compile Include="Payment Methods\BankTransferPayment.cs" />
+    <Compile Include="Payment Methods\CreditCardPayment.cs" />
+    <Compile Include="Payment Methods\PaymentService.cs" />
+    <Compile Include="Payment Methods\PayPalPayment.cs" />
     <Compile Include="Exercises\Day01.cs" />
     <Compile Include="Exercises\Day02.cs" />
     <Compile Include="Exercises\Day03.cs" />
     <Compile Include="Exercises\Day04.cs" />
     <Compile Include="Exercises\Day05.cs" />
     <Compile Include="Exercises\Day06.cs" />
+    <Compile Include="Exercises\Day07.cs" />
+    <Compile Include="Interfaces\INotification.cs" />
+    <Compile Include="Interfaces\IPaymentMethod.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Contractor.cs" />
     <Compile Include="Models\Employee.cs" />
