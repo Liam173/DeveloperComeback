@@ -43,12 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Employee\EmployeeRepository.cs" />
+    <Compile Include="Exercises\Day08.cs" />
     <Compile Include="Interfaces\ILogger.cs" />
     <Compile Include="Logging Methods\ConsoleLogger.cs" />
     <Compile Include="Logging Methods\FileLogger.cs" />
     <Compile Include="Logging Methods\ReportService.cs" />
+    <Compile Include="Employee\EmployeeLogger.cs" />
     <Compile Include="Notification Methods\EmailNotification.cs" />
     <Compile Include="Notification Methods\NotificationService.cs" />
+    <Compile Include="Notification Methods\PushNotification.cs" />
     <Compile Include="Notification Methods\SmsNotification.cs" />
     <Compile Include="Payment Methods\BankTransferPayment.cs" />
     <Compile Include="Payment Methods\CreditCardPayment.cs" />
@@ -70,6 +74,9 @@
     <Compile Include="Models\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Employee\EmployeeReportExporter.cs" />
+    <Compile Include="Employee\EmployeeService.cs" />
+    <Compile Include="Employee\EmployeeValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
