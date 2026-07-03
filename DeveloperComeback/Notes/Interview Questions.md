@@ -567,3 +567,63 @@ Interfaces define a contract, reduce coupling, improve testability, and support 
 Avoid creating interfaces simply because classes operate on the same data; the shared behavior should be meaningful.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 42
+
+What is Dependency Injection?
+
+-------------------------------------
+
+Answer
+
+Dependency Injection is a design pattern where a class receives its dependencies from the outside instead of creating them itself. 
+
+It reduces coupling, improves testability, and makes the application easier to maintain.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 43
+
+What is Dependency Inversion?
+
+-------------------------------------
+
+Answer
+
+High-level modules should not depend on low-level modules. Both should depend on abstractions (interfaces).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 44
+
+What are the three service lifetimes?
+
+-------------------------------------
+
+Answer
+
+Singleton – One instance for the entire application.
+
+Scoped – One instance per HTTP request.
+
+Transient – A new instance every time it is requested.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 45
+
+Why use constructor injection?
+
+-------------------------------------
+
+Answer
+
+Makes dependencies explicit.
+
+Easier to unit test.
+
+Promotes loose coupling.
+
+Prevents hidden dependencies.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

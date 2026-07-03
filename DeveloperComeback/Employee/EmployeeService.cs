@@ -1,22 +1,25 @@
-﻿namespace DeveloperComeback.Services
+﻿using DeveloperComeback.Interfaces;
+
+namespace DeveloperComeback.Services
 {
     public class EmployeeService
     {
         private readonly EmployeeValidator _validator;
-        private readonly EmployeeRepository _repository;
         private readonly EmployeeLogger _logger;
         private readonly EmployeeReportExporter _exporter;
 
+        private readonly IEmployeeRepository _repository;
+
         public EmployeeService(
             EmployeeValidator validator,
-            EmployeeRepository repository,
             EmployeeLogger logger,
-            EmployeeReportExporter exporter)
+            EmployeeReportExporter exporter,
+            IEmployeeRepository repository)
         {
             _validator = validator;
-            _repository = repository;
             _logger = logger;
             _exporter = exporter;
+            _repository = repository;
         }
 
         public void RegisterEmployee(Employee employee)

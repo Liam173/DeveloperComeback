@@ -1,8 +1,9 @@
-﻿using System;
+﻿using DeveloperComeback.Interfaces;
+using System;
 
 namespace DeveloperComeback.Services
 {
-    public class EmployeeRepository
+    public class EmployeeRepository : IEmployeeRepository
     {
         public void Save(Employee employee)
         {

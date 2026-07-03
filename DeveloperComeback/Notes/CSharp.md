@@ -226,3 +226,21 @@ Prefer several small, focused interfaces over one large interface.
 
 Dependency Inversion Principle (DIP)
 Depend on abstractions (interfaces), not concrete implementations.
+
+
+# Dependency Injection
+
+Dependency Injection is a design pattern where a class receives the objects it depends on instead of creating them itself.
+
+This reduces coupling, improves testability, and makes the code easier to maintain.
+
+
+# Analogy for Interfaces, SOLID Principles, and Dependency Injection
+
+Think of it like building a house:
+
+1. **Interfaces** are the wall sockets. It defines 220V 3 pins. It doesn't generate electricity. It's just the contract.
+
+2. **Dependency Injection** is like the electricity provider. It provides the electricity to the sockets. Your appliance simply plugs in. That's DI. The appliance didn't create electricity, it received it.
+
+3. **SOLID Principles** are the building codes. They ensure that the house is built in a way that is safe, maintainable, and scalable. If you follow the building codes, your house will be more robust and easier to modify in the future.
