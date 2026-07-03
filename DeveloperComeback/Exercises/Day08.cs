@@ -23,19 +23,19 @@ namespace DeveloperComeback.Exercises
 
         public static void RunEmployeeExample()
         {
-            var employee = new Employee(
-                "John",
-                30,
-                25000m);
+            //var employee = new Employee(
+            //    "John",
+            //    30,
+            //    25000m);
 
-            var employeeService =
-                new EmployeeService(
-                    new EmployeeValidator(),
-                    new EmployeeRepository(),
-                    new EmployeeLogger(),
-                    new EmployeeReportExporter());
+            //var employeeService =
+            //    new EmployeeService(
+            //        new EmployeeValidator(),
+            //        new EmployeeRepository(),
+            //        new EmployeeLogger(),
+            //        new EmployeeReportExporter());
 
-            employeeService.RegisterEmployee(employee);
+            //employeeService.RegisterEmployee(employee);
         }
     }
 }
