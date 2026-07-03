@@ -58,6 +58,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\EmployeeNotFoundException.cs" />
+    <Compile Include="Exercises\Day10.cs" />
     <Compile Include="Interfaces\IEmployeeRepository.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />
     <Compile Include="Exercises\Day08.cs" />

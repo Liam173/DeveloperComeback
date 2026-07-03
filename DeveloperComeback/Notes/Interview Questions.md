@@ -627,3 +627,79 @@ Promotes loose coupling.
 Prevents hidden dependencies.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 46
+
+What is an exception?
+
+-------------------------------------
+
+Answer
+
+An exception is an object representing an error that occurs during program execution.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 47
+
+Why use try/catch?
+
+-------------------------------------
+
+Answer
+
+To gracefully handle runtime errors instead of crashing the application.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 48
+
+What does finally do?
+
+-------------------------------------
+
+Answer
+
+A finally block always executes, regardless of whether an exception was thrown or caught. 
+
+It is typically used for cleanup tasks such as closing files or releasing database connections.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 49
+
+Why create custom exceptions?
+
+-------------------------------------
+
+Answer
+
+They make errors more meaningful, easier to catch specifically, and improve debugging and maintainability.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 50
+
+Difference between throw and throw ex?
+
+-------------------------------------
+
+Answer
+
+They make errors more meaningful, easier to catch specifically, and improve debugging and maintainability.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 51
+
+What is exception propagation?
+
+-------------------------------------
+
+Answer
+
+Exception propagation is the process where an exception moves up the call stack until it is caught by a suitable catch block. 
+
+If no code catches it, the application or current request terminates with an unhandled exception.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

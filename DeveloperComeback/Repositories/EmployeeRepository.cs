@@ -1,7 +1,8 @@
-﻿using DeveloperComeback.Interfaces;
+﻿using DeveloperComeback.Exceptions;
+using DeveloperComeback.Interfaces;
 using System;
 
-namespace DeveloperComeback.Services
+namespace DeveloperComeback
 {
     public class EmployeeRepository : IEmployeeRepository
     {
@@ -9,6 +10,16 @@ namespace DeveloperComeback.Services
         {
             Console.WriteLine(
                 $"Saving {employee.Name} to SQL Server...");
+        }
+
+        public Employee GetById(int id) 
+        {
+            if (id != 1)
+            {
+                throw new EmployeeNotFoundException(id);
+            }
+
+            return new Employee("Steve", 45, 6000m);
         }
     }
 }
