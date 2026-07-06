@@ -703,3 +703,63 @@ Exception propagation is the process where an exception moves up the call stack 
 If no code catches it, the application or current request terminates with an unhandled exception.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 52
+
+What are Generics?
+
+-------------------------------------
+
+Answer
+
+Generics allow you to define classes, methods, and data structures with a placeholder for the type of data they store or use.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 53
+
+Why use Generics?
+
+-------------------------------------
+
+Answer
+
+It provides type safety, reduces code duplication, and improves performance by avoiding boxing/unboxing for value types.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 54
+
+What does <T> represent?
+
+-------------------------------------
+
+Answer
+
+<T> is a placeholder for a type parameter in generics. It allows you to define a class, method, or interface that can operate on different data types while maintaining type safety.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 55
+
+What is a Generic Repository?
+
+-------------------------------------
+
+Answer
+
+A Generic Repository is a design pattern that provides a generic way to perform CRUD (Create, Read, Update, Delete) operations on different types of entities without duplicating code for each entity type.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 56
+
+When would you avoid a Generic Repository?
+
+-------------------------------------
+
+Answer
+
+Would avoid a Generic Repository when the data access logic is complex, requires specific queries, or when the repository needs to handle multiple related entities with different behaviors. In such cases, a more specialized repository pattern may be more appropriate.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

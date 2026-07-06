@@ -244,3 +244,24 @@ Think of it like building a house:
 2. **Dependency Injection** is like the electricity provider. It provides the electricity to the sockets. Your appliance simply plugs in. That's DI. The appliance didn't create electricity, it received it.
 
 3. **SOLID Principles** are the building codes. They ensure that the house is built in a way that is safe, maintainable, and scalable. If you follow the building codes, your house will be more robust and easier to modify in the future.
+
+
+# Generics
+
+Generics allow classes, methods and interfaces to work with different data types while keeping type safety.
+
+Instead of creating separate implementations for each type, one generic implementation can be reused.
+
+Example:
+
+List<Employee>
+
+List<Car>
+
+Repository<Employee>
+
+Repository<Car>
+
+The generic placeholder is usually named T.
+
+T represents the type that will be supplied later.
