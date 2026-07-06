@@ -106,6 +106,7 @@
     <None Include="Notes\Git.md" />
     <None Include="Notes\Interview Questions.md" />
     <None Include="packages.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
