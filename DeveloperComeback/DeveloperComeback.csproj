@@ -60,7 +60,9 @@
   <ItemGroup>
     <Compile Include="Exceptions\EmployeeNotFoundException.cs" />
     <Compile Include="Exercises\Day10.cs" />
+    <Compile Include="Exercises\Day11.cs" />
     <Compile Include="Interfaces\IEmployeeRepository.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />
     <Compile Include="Exercises\Day08.cs" />
     <Compile Include="Exercises\Day09.cs" />
@@ -96,6 +98,7 @@
     <Compile Include="Employee\EmployeeReportExporter.cs" />
     <Compile Include="Employee\EmployeeService.cs" />
     <Compile Include="Employee\EmployeeValidator.cs" />
+    <Compile Include="Repositories\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
